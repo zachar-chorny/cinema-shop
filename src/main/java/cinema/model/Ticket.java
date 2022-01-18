@@ -30,14 +30,6 @@ public class Ticket {
         this.id = id;
     }
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
     public MovieSession getMovieSession() {
         return movieSession;
     }
@@ -46,11 +38,19 @@ public class Ticket {
         this.movieSession = movieSession;
     }
 
-    @Override
-    public String toString() {
-        return "Ticket{" + "id=" + id
-              + ", movieSession=" + movieSession
-              + ", user=" + user + '}';
+    public User getUser() {
+        return user;
     }
 
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    @Override
+    public String toString() {
+        return "Ticket{"
+                + "id=" + id
+                + ", movieSession=" + movieSession
+                + ", user=" + user + '}';
+    }
 }
