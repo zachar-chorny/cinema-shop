@@ -4,7 +4,7 @@ ___
 ## Introduction
 
 This is a prototype of a web application that works like a movie theater.
-In it, the user can have the role of Admin or regular user.
+In this application, user can have two roles `ADMIN` or `USER`.
 The access for endpoints depends on these roles.
 
 ## Project structure
