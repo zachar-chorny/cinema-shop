@@ -5,14 +5,14 @@ ___
 
 This is a prototype of a web application that works like a movie theater.
 In it, the user can have the role of Admin or regular user.
-Based on these roles, access to endpoints is provided.
+The access for endpoints depends on these roles.
 
 ## Project structure
 
 #### The structure of this project consists of 3 levels:
-* Data access layer (DAO). This layer is responsible for accessing the database. It is implemented with Hibernate API.
+* Data access layer (DAO). This layer is responsible for accessing the database. It is implemented with a Hibernate API.
 * Application layer (service). This layer implements the main logic of the application.
-* Presentation layer (controllers). This layer is responsible for communication with the user. It is implemented with Spring API.
+* Presentation layer (controllers). This layer is responsible for communication with a user. It is implemented with Spring API.
 
 #### Technologies:
 * MySql
@@ -22,11 +22,11 @@ Based on these roles, access to endpoints is provided.
 * Maven
 * JSON
 ## Opportunities depending on the role
-To test this application, I provide two ready-made users:
-* username admin@i.ua with password admin123 with role admin
-* username user@i.ua with password user123 with role user
+There are two ready-made users provided for testing this application:
+* username admin@i.ua with password admin123 and role `ADMIN`
+* username user@i.ua with password user123 and role `USER`
 
-Use pre-made or register your own user (POST: /register)
+You can also register a new one (POST: /register)
 
 The admin has access to such endpoints:
 * POST: /cinema-halls
@@ -47,12 +47,12 @@ Endpoints that can be accessed by any logged-in user:
 * GET: /movies
 * GET: /movie-sessions/available
 
-#### To send requests to the above endpoints, use Postman
+#### Use Postman for sending your requests during testing this application
 
 ## How to start the application
 
 1. Install and configure Apache Tomcat(v9.0.50)
-2. Install MySQL with Workbench
-3. Fork this project
+2. Install MySQL with MySQL Workbench
+3. Fork this project on GitHub
 4. In the /resources/db.properties file, replace the stubs with your database data
-5. Run the app
+5. Run the application
